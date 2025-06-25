@@ -32,8 +32,7 @@ jobs:
       # 4. Run tests with coverage
       - name: Run unit tests with coverage
         run: |
-          coverage run -m unittest discover -s . -p "test_*.py" -v
-          coverage xml
+          pytest --cov=. --cov-report=xml
 
       # 5. Upload coverage report to Codecov
       - name: Upload coverage reports to Codecov

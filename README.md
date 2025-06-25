@@ -28,5 +28,5 @@ uvicorn main:app --reload --reload-exclude logs/
 ## Test
 
 ```bash
-python -m unittest discover
+pytest
 ```

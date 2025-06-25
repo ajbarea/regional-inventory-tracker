@@ -2,3 +2,5 @@ fastapi
 uvicorn[standard]
 coverage
 httpx
+pytest
+pytest-cov
